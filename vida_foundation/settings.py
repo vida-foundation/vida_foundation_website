@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = getenv('SECRET_KEY', None)
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True if getenv('DEBUG', None) == 'True' else False
+DEBUG = getenv('DEBUG', None) == 'True'
 
 ALLOWED_HOSTS = []
 
