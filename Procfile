@@ -1,0 +1,1 @@
+web: gunicorn vida_foundation.wsgi --log-file -
