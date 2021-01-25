@@ -20,3 +20,4 @@ def about(request: HttpRequest) -> HttpResponse:
         'title': 'About Us'
     }
     return render(request, 'vida/about.html', context)
+  
