@@ -1,0 +1,34 @@
+#  file:     stale.yml
+#  org:      Vida Foundation Uganda Inc.
+#  version:  1.0.0
+#  since:    1.0.0
+#  authors:
+#    - @PabloAlexis611
+#  summary:
+#    File for the Stale GitHub Action configuration.
+#    Checks for stale issues and pull requests.
+#  see:
+#    - https://github.com/vida-foundation/vida-foundation-website/new/main?filename=.github%2Fworkflows%2Fstale.yml&workflow_template=stale
+
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: '21 6 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        stale-issue-message: 'This issue is stale.'
+        stale-pr-message: 'This pull request is stale.'
+        stale-issue-label: 'no-issue-activity'
+        stale-pr-label: 'no-pr-activity'
