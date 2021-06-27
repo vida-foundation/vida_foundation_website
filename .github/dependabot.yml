@@ -1,18 +1,16 @@
-# File Description
-.fileDescription:
-  file:     "dependabot.yml"
-  org:      "Vida Foundation Uganda Inc."
-  version:  "1.0.0"
-  since:    "1.0.0"
-  authors:
-    - "@PabloAlexis611"
-  summary: >
-    File for the Dependabot configuration.
-  see:
-    - "https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates"
+#  file:     dependabot.yml
+#  org:      Vida Foundation Uganda Inc.
+#  version:  1.0.0
+#  since:    1.0.0
+#  authors:
+#    - @PabloAlexis611
+#  summary:
+#    File for the Dependabot configuration.
+#  see:
+#    - https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates
 
 
-# Dependabot version
+# Dependabot version.
 version: 2
 
 # Set update schedule for each package manager.
