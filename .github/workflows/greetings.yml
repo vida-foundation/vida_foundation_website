@@ -1,0 +1,28 @@
+#  file:     greetings.yml
+#  org:      Vida Foundation Uganda Inc.
+#  version:  1.0.0
+#  since:    1.0.0
+#  authors:
+#    - @PabloAlexis611
+#  summary:
+#    File for the Greetings GitHub Action configuration.
+#    Greets users who are first time contributors to the repo.
+#  see:
+#    - https://github.com/vida-foundation/vida-foundation-website/new/main?filename=.github%2Fworkflows%2Fgreetings.yml&workflow_template=greetings
+
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "Hello there! This is your first issue!"
+        pr-message: 'Hello there! This is your first pull request!'
