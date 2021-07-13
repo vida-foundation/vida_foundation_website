@@ -1,0 +1,22 @@
+{
+  "name": "vfw-frontend",
+  "version": "0.0.1",
+  "description": "Frontend for the Vida Foundation Website",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "ts-start": "ts-node src/index.ts",
+    "dev": "nodemon dist/index.js",
+    "ts-dev": "nodemon --exec ts-node src/index.ts"
+  },
+  "author": "Vida Foundation Uganda Inc.",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.3.1",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}

@@ -1,1 +1,1 @@
-web: bin/start-nginx bundle exec cd backend && python -m gunicorn.app.wsgiapp vida_foundation.wsgi -c config/gunicorn.py
+web: bin/start-nginx bundle exec cd app && python -m gunicorn.app.wsgiapp backend.wsgi -c config/gunicorn.py
