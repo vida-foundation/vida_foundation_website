@@ -2,8 +2,6 @@
 #  org:      Vida Foundation Uganda Inc.
 #  version:  1.0.0
 #  since:    1.0.0
-#  authors:
-#    - @PabloAlexis611
 #  summary:
 #    File for the Stale GitHub Action configuration.
 #    Checks for stale issues and pull requests.

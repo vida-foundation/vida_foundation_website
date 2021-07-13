@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": ".venv/bin/python3.8",
+    "python.autoComplete.extraPaths": [
+        ".venv/lib/python3.8/site-packages"
+    ],
+    "cSpell.words": [
+        "psycopg"
+    ]
+}
