@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = getenv('SECRET_KEY', None)
+SECRET_KEY = getenv(
+    'SECRET_KEY', 'ptrrj=3!=avu*x3w@^c)=q&(rzx%ldykb078xbge!^707k+=3_')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getenv('DEBUG', None) == 'True'
@@ -42,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'vida'
+    'vida',
+    'news'
 ]
 
 MIDDLEWARE = [
@@ -81,8 +83,12 @@ WSGI_APPLICATION = 'vida_foundation.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'localvf',
+        'USER': 'shervin',
+        'PASSWORD': 'rpH2nPYQG&',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
