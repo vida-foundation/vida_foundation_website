@@ -16,7 +16,7 @@ updates:
 
   # pip (Python)
   - package-ecosystem: "pip"
-    directory: "/backend"
+    directory: "/"
     target-branch: "develop"
     schedule:
       interval: "daily"
@@ -38,7 +38,7 @@ updates:
 
   # npm (JavaScript)
   - package-ecosystem: "npm"
-    directory: "/frontend"
+    directory: "/"
     target-branch: "develop"
     schedule:
       interval: "daily"
