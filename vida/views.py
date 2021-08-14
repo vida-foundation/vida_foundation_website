@@ -1,5 +1,5 @@
 """
-Core views
+vida views
 """
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
@@ -8,7 +8,7 @@ def home(request: HttpRequest) -> HttpResponse:
     """
     The function in charge of rendering the '/' endpoint.
     """
-    return render(request, 'core/home.html')
+    return render(request, 'vida/home.html')
 
 def about(request: HttpRequest) -> HttpResponse:
     """
@@ -18,4 +18,4 @@ def about(request: HttpRequest) -> HttpResponse:
     context = {
         'title': 'About Us'
     }
-    return render(request, 'core/about.html', context)
+    return render(request, 'vida/about.html', context)

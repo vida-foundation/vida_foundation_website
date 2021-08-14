@@ -1,5 +1,5 @@
 """
-This file contains the tests for the views of the 'core' application.
+This file contains the tests for the views of the 'vida' application.
 """
 
 from django.test import TestCase
@@ -7,7 +7,7 @@ from .views import home, about
 
 class TestVida(TestCase):
     """
-    Class containing the tests for the 'core' application.
+    Class containing the tests for the 'vida' application.
     """
 
     def setUp(self) -> None:

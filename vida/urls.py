@@ -1,5 +1,5 @@
 """
-This file defines the URL patterns that are found in the 'core' application,
+This file defines the URL patterns that are found in the 'vida' application,
 and specifies to which 'view' each of them is mapped to.
 """
 from django.urls import path
