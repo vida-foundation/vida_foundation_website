@@ -1,6 +1,5 @@
 """
-This file contains all the functions/classes that will render (provide the views for)
-the endpoints for the 'vida' application
+vida views
 """
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
@@ -20,4 +19,3 @@ def about(request: HttpRequest) -> HttpResponse:
         'title': 'About Us'
     }
     return render(request, 'vida/about.html', context)
-  

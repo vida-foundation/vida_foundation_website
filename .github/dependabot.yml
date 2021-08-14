@@ -1,0 +1,56 @@
+#  file:     dependabot.yml
+#  org:      Vida Foundation Uganda Inc.
+#  version:  1.0.0
+#  since:    1.0.0
+#  summary:
+#    File for the Dependabot configuration.
+#  see:
+#    - https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates
+
+
+# Dependabot version.
+version: 2
+
+# Set update schedule for each package manager.
+updates:
+
+  # pip (Python)
+  - package-ecosystem: "pip"
+    directory: "/"
+    target-branch: "develop"
+    schedule:
+      interval: "daily"
+      time: "06:00"
+      timezone: "America/Puerto_Rico"
+    open-pull-requests-limit: 10
+    pull-request-branch-name:
+      separator: "/"
+    ignore:
+      - dependency-name: "Django"
+        versions: ["<3.2.4", ">3.2.4"]
+    assignees:
+      - "PabloAlexis611"
+    reviewers:
+      - "vida-foundation/developer"
+    labels:
+      - "pip"
+      - "dependencies"
+
+  # npm (JavaScript)
+  - package-ecosystem: "npm"
+    directory: "/"
+    target-branch: "develop"
+    schedule:
+      interval: "daily"
+      time: "06:00"
+      timezone: "America/Puerto_Rico"
+    open-pull-requests-limit: 10
+    pull-request-branch-name:
+      separator: "/"
+    reviewers:
+      - "vida-foundation/developer"
+    assignees:
+      - "shervinf1"
+    labels:
+      - "npm"
+      - "dependencies"
