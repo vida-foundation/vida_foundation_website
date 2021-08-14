@@ -18,16 +18,13 @@ import django_heroku
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = environ['DJANGO_SECRET_KEY']
+SECRET_KEY = environ.get('DJANGO_SECRET_KEY', None)
 
-DEBUG = environ['DJANGO_DEBUG']
+DEBUG = environ.get('DJANGO_DEBUG', False)
 
 ALLOWED_HOSTS = [
     'www.vida-foundation.com',
-    'vida-foundation.herokuapp.com',
-    'localhost',
-    '127.0.0.1',
-    '0.0.0.0'
+    'vida-foundation.herokuapp.com'
 ]
 
 INSTALLED_APPS = [
@@ -38,8 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'account',
-    'blog',
+    'news',
     'donations'
 ]
 
