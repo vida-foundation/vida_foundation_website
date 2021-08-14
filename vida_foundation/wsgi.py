@@ -11,6 +11,6 @@ import os
 
 from django.vida.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'vida_foundation.settings')
 
 application = get_wsgi_application()

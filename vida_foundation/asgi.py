@@ -11,6 +11,6 @@ import os
 
 from django.vida.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'vida_foundation.settings')
 
 application = get_asgi_application()
