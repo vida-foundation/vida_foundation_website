@@ -23,8 +23,10 @@ SECRET_KEY = environ.get('DJANGO_SECRET_KEY', None)
 DEBUG = environ.get('DJANGO_DEBUG', False)
 
 ALLOWED_HOSTS = [
-    'www.vida-foundation.com',
-    'vida-foundation.herokuapp.com'
+    'https://www.vida-foundation.com',
+    'https://vida-foundation.herokuapp.com',
+    'localhost',
+    '127.0.0.1'
 ]
 
 INSTALLED_APPS = [
