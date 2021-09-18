@@ -1,0 +1,15 @@
+# Folders
+.git
+.github
+.venv
+.vscode
+
+# Files
+.dockerignore
+.env
+.envrc
+.gitignore
+code_of_conduct.md
+db.sqlite3
+Dockerfile
+LICENSE
