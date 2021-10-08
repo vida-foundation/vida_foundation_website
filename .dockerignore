@@ -1,16 +1,21 @@
-# Folders
-.git
-.github
-.venv
-.vscode
+#
+# Ignore everything.
+/*
 
-# Files
-.dockerignore
-.env
-.envrc
-.gitignore
-code_of_conduct.md
-db.sqlite3
-Dockerfile
-docker-lightsail-push.sh
-LICENSE
+# Only make the following available for the build context:
+# For CI cache
+!.vida_venv
+
+# Django Project, Apps, and Files
+!__init__.py
+!requirements.txt
+!vida_foundation/
+!donations/
+!vida/
+!manage.py
+
+# Nginx template
+!nginx.conf.template
+
+# Container entrypoint file
+!start.sh
